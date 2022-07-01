@@ -1,2 +1,2 @@
 # random-password-generator
-![image](https://github.com/liferacer333/random-password-generator/blob/main/PassGenerator.png)
+<img src="https://github.com/liferacer333/random-password-generator/blob/main/Passgenerator.png" alt="drawing" width="200"/>
