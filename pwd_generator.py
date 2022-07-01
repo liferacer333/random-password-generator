@@ -24,11 +24,11 @@ passwords = int(input("Enter the number of passwords you want to generate: "))
 length = int(input("Enter your password length: "))
 #password length
 
-file = "passwords.txt"
-#passwords are saved in the passwords.txt file
+file = input("Enter filename to save your passwords: ")
+#passwords are saved in the {filename}.txt file
 
 print("Your passwords are saved in the",file, "file")
-sys.stdout = open(file, "w")
+sys.stdout = open(file + ".txt", "w")
 print("Your passwords: \n")
 
 for pwd in range(passwords):
