@@ -2,6 +2,7 @@ import random
 #random module to generate random numbers
 import string 
 #string module to create a random string
+import sys
 print("""
 	####################################################################
 	#      PYTHON - Random Password Generetor (RPG) - Liferacer333     #
