@@ -30,7 +30,6 @@ file = "passwords.txt"
 print("Your passwords are saved in the",file, "file")
 sys.stdout = open(file, "w")
 print("Your passwords: \n")
-print("Your passwords:")
 
 for pwd in range(passwords):
     password = ''
