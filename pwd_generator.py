@@ -3,6 +3,9 @@ import random
 import string 
 #string module to create a random string
 import sys
+import datetime
+#imports date & time
+
 print("""
 	####################################################################
 	#      PYTHON - Random Password Generetor (RPG) - Liferacer333     #
@@ -29,10 +32,20 @@ file = input("Enter filename to save your passwords: ")
 
 print("Your passwords are saved in the",file, "file")
 sys.stdout = open(file + ".txt", "w")
-print("Your passwords: \n")
+if passwords > 1:
+    print("Your passwords: \n")
+else:
+    print("Your password: \n") 
 
 for pwd in range(passwords):
     password = ''
     for i in range (length):
         password += random.choice(characters)
-    print(password)
+    print(password,"\n")
+
+
+x = datetime.datetime.now()
+if passwords > 1:
+    print("Passwords generated on",x)
+else:
+    print("password generated on",x)
